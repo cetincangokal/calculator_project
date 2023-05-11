@@ -1,3 +1,4 @@
+import 'package:calculator_project/colors_constants.dart';
 import 'package:calculator_project/custom_button.dart';
 import 'package:calculator_project/strings_constants.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(221, 56, 21, 21),
+      backgroundColor: ColorConstants.bgColor,
       body: Column(
         children: [
           SizedBox(
@@ -26,7 +27,7 @@ class _homePageState extends State<homePage> {
                   padding: const EdgeInsets.all(20),
                   child: Text(
                     StringConstants.Input,
-                    style: TextStyle(fontSize: 32, color: Colors.white),
+                    style: const TextStyle(fontSize: 32, color: ColorConstants.white),
                   ),
                 ),
                 Container(
@@ -34,9 +35,9 @@ class _homePageState extends State<homePage> {
                   padding: const EdgeInsets.all(10),
                   child:  Text(
                     StringConstants.Result,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 48,
-                        color: Colors.white,
+                        color: ColorConstants.white,
                         fontWeight: FontWeight.bold),
                   ),
                 )
@@ -44,7 +45,7 @@ class _homePageState extends State<homePage> {
             ),
           ),
           const Divider(
-            color: Colors.white,
+            color: ColorConstants.white,
           ),
           Expanded(
               child: Container(
